@@ -6,16 +6,13 @@ import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root") as HTMLElement).render(
   <React.StrictMode>
-    <BrowserRouter
-      basename={import.meta.env.DEV ? "/" : "/portfolio/"}
-    >
+    <BrowserRouter>
       <Routes>
         <Route
-          path="/"
+          path="/portfolio"
           element={<App />}
         />
       </Routes>
     </BrowserRouter>
-    <App />
   </React.StrictMode>
 );
