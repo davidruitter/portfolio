@@ -2,7 +2,7 @@ import { Box, Flex, Heading, Text, Link } from "@chakra-ui/react";
 
 interface GithubRepoCardProps {
   name: string;
-  description: string;
+  description: string | undefined;
   language: string;
   stargazers_count: number;
   forks_count: number;
